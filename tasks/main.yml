@@ -1,0 +1,10 @@
+---
+
+- name: install configuration file
+  copy:
+    src: etc/lightdm/lightdm.conf.d/50-no-guest.conf
+    dest: /etc/lightdm/lightdm.conf.d/50-no-guest.conf
+    owner: root
+    group: root
+    mode: 0644
+    
